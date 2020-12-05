@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py<37 or win]
 
@@ -28,7 +28,7 @@ requirements:
   run:
     - python
     - astropy
-    - matplotlib
+    - matplotlib-base
     - pyyaml
     - fitsio
     - esutil
